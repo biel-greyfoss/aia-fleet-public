@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aia-pub-service
+  labels:
+    app: aia-pub
+spec:
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 9000
+    targetPort: 9000
+    nodePort: 30008
+  selector:
+    app: aia-pub
+    
+  #externalIPs:
+  #  - 80.11.12.10

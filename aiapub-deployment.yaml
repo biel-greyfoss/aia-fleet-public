@@ -19,7 +19,7 @@ spec:
         image: 1148541663/aia-private
         imagePullPolicy: Always
         # command: [ "echo", "SUCCESS" ]
-        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+        # command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
         resources:
           requests:
            cpu: 100m

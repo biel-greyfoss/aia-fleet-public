@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aiapub-deployment
+  labels:
+    app: aiapub
+spec:
+  selector:
+    matchLabels:
+      app: aiapub
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: aiapub
+    spec:
+      containers:
+      - name: aiapub
+        image: 1148541663/aia-private
+        imagePullPolicy: Always
+        command: [ "echo", "SUCCESS" ]
+        resources:
+          requests:
+           cpu: 100m
+           memory: 100Mi
+        ports:
+        - containerPort: 9000
+      imagePullSecrets:
+      - name: dockerhub-registry-key

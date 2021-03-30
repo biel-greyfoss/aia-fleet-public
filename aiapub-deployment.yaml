@@ -18,7 +18,7 @@ spec:
       - name: aiapub
         image: 1148541663/aia-private
         imagePullPolicy: Always
-        command: [ "echo", "SUCCESS" ]
+        # command: [ "echo", "SUCCESS" ]
         resources:
           requests:
            cpu: 100m

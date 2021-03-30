@@ -18,12 +18,12 @@ spec:
       - name: aiapub
         image: 1148541663/aia-private
         imagePullPolicy: Always
-          command: [ "echo", "SUCCESS" ]
-        imagePullSecrets:
-          - name: dockerhub-registry-key
+        command: [ "echo", "SUCCESS" ]
         resources:
           requests:
            cpu: 300m
            memory: 300Mi
         ports:
         - containerPort: 9000
+      imagePullSecrets:
+      - name: dockerhub-registry-key

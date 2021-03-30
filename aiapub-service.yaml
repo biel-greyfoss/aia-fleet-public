@@ -10,7 +10,7 @@ spec:
   - protocol: TCP
     port: 9000
     targetPort: 9000
-    nodePort: 30008
+    nodePort: 38888
   selector:
     app: aiapub
     

@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aia-pub-deployment
+  name: aiapub-deployment
   labels:
-    app: aia-pub
+    app: aiapub
 spec:
   selector:
     matchLabels:
-      app: aia-pub
+      app: aiapub
   replicas: 2
   template:
     metadata:
       labels:
-        app: aia-pub
+        app: aiapub
     spec:
       containers:
-      - name: aia-pub
+      - name: aiapub
         image: 1148541663/aia-private
         imagePullPolicy: Always
           command: [ "echo", "SUCCESS" ]

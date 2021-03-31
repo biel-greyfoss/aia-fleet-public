@@ -4,6 +4,7 @@ metadata:
   name: aiapub-service
   labels:
     app: aiapub
+  resourceVersion: v1
 spec:
   type: NodePort
   ports:

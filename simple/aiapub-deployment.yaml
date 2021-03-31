@@ -24,6 +24,6 @@ spec:
            cpu: 100m
            memory: 100Mi
         ports:
-        - containerPort: 9000
+        - containerPort: 80
       imagePullSecrets:
       - name: dockerhub-registry-key
